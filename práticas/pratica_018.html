@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 18</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+        thead{
+            background-color: rgba(197, 227, 255, 0.87);
+        }
+        table{
+            background-color: rgb(255, 255, 255);
+        }
+        td{
+            background-color: rgb(214, 214, 214);
+            text-align: center;
+
+        }
+        #meio{
+            text-align: left;
+        }
+        #numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table border="0" cellspacing="2" align="center" width="80%">
+        <thead> <tr>
+            <th colspan="4">Venda de Automóveis no Varejo por modelo</th> 
+        </tr>
+        <tr>
+            <th>Fabricante</th> <th id="meio">Marca (incluindo todos os modelos e categorias)</th> <th id="numero">1995</th> <th id="numero">1996</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Fiat</td> <td id="meio">Tempra</td> <td id="numero">12.747</td> <td id="numero">15.844</td>
+            </tr>
+            <tr>
+                <td id="meio">Uno</td> <td id="numero">101.373</td> <td id="numero">105.848</td>
+            </tr>
+            <tr>
+                <td>Ford</td> <td id="meio">Fiesta</td> <td id="numero">54.8474</td> <td id="numero">63.858</td>
+            </tr>
+            <tr>
+                <td rowspan="3">General Motors</td> <td id="meio">Corsa</td> <td id="numero">84.747</td> <td id="numero">85.737</td>
+            </tr>
+            <tr>
+                 <td id="meio">Monza</td> <td id="numero">24.858</td> <td id="numero">19.233</td>
+            </tr>
+            <tr>
+                <td id="meio">Vectra</td> <td id="numero">14.838</td> <td id="numero">15.421</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Volkswagem</td> <td id="meio">Gol</td> <td id="numero">122.243</td> <td id="numero">129.636</td>
+            </tr>
+            <tr>
+                <td id="meio">Parati</td> <td id="numero"> 122.636</td> <td id="numero">19.636</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

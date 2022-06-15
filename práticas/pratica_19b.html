@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prática 019</title>
+    <style>
+        div#bordas{
+            width: 600px;
+            height: 50px;
+            background-image: linear-gradient(to right, rgb(182, 0, 0), rgb(255, 51, 0));
+            margin: 10px auto 5px auto;
+        }
+        body{
+            color: rgb(114, 0, 0);
+        }
+
+        table{
+            width: 600px;
+            margin: auto;
+        }
+
+        hr{
+            background-color: rgb(167, 0, 0);
+            width: 600px;
+            height: 2px;
+            border: 0px;
+        }
+        div{
+            margin: auto;
+            width: 600px;
+        }
+        #icon{
+            width: 40px;
+            margin-right: 10px;
+        }
+        table{
+            margin: auto;
+            width: 600px;
+        }
+        tr{
+            width: 400px;
+        }
+        td{
+            width: 150px;   
+            background-color: white;
+        }
+        footer{
+            text-align: center;
+        }
+        footer a:link{
+            color: rgb(224, 0, 0);
+        }
+        footer a:visited{
+            color: rgb(121, 0, 0);
+        }
+        footer a:active{
+            color:blue;
+        }
+        footer a:hover{
+            color: orangered;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bordas"></div>
+    <div> <img src="imagens/pizzaicon.png" id='icon'alt="pizzaicon">Cadastre-se e receba nossas atualizações</div>
+    <hr>
+    <div>
+        <table>
+            <tr>
+                <td align="right">nome: </td> <td><input type="text" name="nome"></td>
+            </tr>
+            <tr>
+                <td align="right">senha: </td><td><input type="password" name="senha"></td>
+            </tr>
+            <tr>
+                <td align="right">Confirmação de senha: </td> <td><input type="password" name="confirmacaodesenha"></td>
+            </tr>
+            <tr>
+                <td align="right">Seu tipo de Pizza preferida: </td> <td><select name="pizza_preferida">
+                    <option value="calabresa">calabresa</option>
+                    <option value="margarita">margarita</option>
+                    <option value="carne">carne</option>
+                    <option value="queijo" selected>queijo</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td rowspan="3" align="right">Quantas vezes como pizza por semestre? </td> 
+                <td><input type="radio" name="qtd" value="1_a_5"> Entre 1 a 5</td>
+
+            </tr>
+            <tr>
+                <td><input type="radio" name="qtd" value="5_a_10"> Entre 5 a 10</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="qtd" value="mais_10"> Mais de 10</td>
+            </tr>
+            <tr>
+                <td rowspan="3" align="right">comentários: </td>
+                <td rowspan="3"><textarea name="comentarios" id="" cols="30" rows="4"></textarea></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="checkbox" name="novidades"> Deseja receber novidades de nossos parceiros</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit" value="enviar">enviar</button> <button type="reset" value="reset">Resetar</button></td>
+            </tr>
+        </table>
+
+    </div>
+    <hr>
+    <footer><a href="#">www.pizzaonline.com.br</a></footer>
+
+    <div id="bordas"></div>
+</body>
+</html>
